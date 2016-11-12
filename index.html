@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/tictactoe.css">
+</head>
+<body>
+	<div id="title">
+		<h1>Tic Tac Toe</h1>
+	</div>
+	<div id="container">
+		<div id="grid">
+			<div class="myrow">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+			<div class="myrow">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+			<div class="myrow">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+		</div>
+	</div>
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div id="result" class="modal-body"></div>
+	      <div class="modal-footer">
+	        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+	        <button id="restart-btn" type="button" class="btn btn-default">Restart</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/tictactoe.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -18,6 +18,7 @@ $( document ).ready(function() {
 	  	$(this).click( function() {
 	  		var index = $(this).index('.cell');
 			if (res[index] == -1) {
+				$(this).css('background', "rgb(150, 150, 150)");
 		        var img = $('<img>');
 				img.attr('src', p1 ? 'images/O.png' : 'images/X.png');
 				img.appendTo($(this));
@@ -43,6 +44,22 @@ $( document ).ready(function() {
 				}
 			}
     	});
+	});
+
+	$(".cell").each(function() {
+		$(this).hover( 
+			function() {
+				// if not already selected, show move
+				var index = $(this).index('.cell');
+				if (res[index] == -1) {
+					var background = p1 ? "url('images/O-translucent.png')" : "url('images/X-translucent.png')";
+					background += " " + $(this).css('backgroundColor');
+					$(this).css('background', background);
+				}
+			}, 
+			function() {
+				$(this).css('background', "rgb(150, 150, 150)");
+			});
 	});
 
 	$( "#restart-btn" ).click(function() {
